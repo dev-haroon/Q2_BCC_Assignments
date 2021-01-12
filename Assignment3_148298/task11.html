@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script language="javascript">
+
+        var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+        var bakeryInput = prompt("What do you want to order");
+        var isFound = false;
+        for (i= 0;i<A.length;i++){
+            //document.write(A[i] +" ");
+            if(A[i] === bakeryInput)
+            {                
+                document.write(A[i] +" is available at index "+i+" in your bakery");
+                isFound = true;     
+                break;
+            }
+        }
+        if(isFound === false)
+        {
+            document.write("we are Sorry. "+bakeryInput +" is not available in your bakery <br>");
+        }
+        console.log(A);
+    </script>   
+</head>
+    <body>       
+        
+    
+    </body>
+
+    
+
+
+</html>

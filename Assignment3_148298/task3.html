@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    
+</head>
+    <body>
+        
+        <script language="javascript">
+            
+            var colors = [];
+            var color1 = prompt("Enter any color ");
+            colors.push(color1);
+            console.log(colors);
+
+            var color2 = prompt("Enter any color ");
+            colors.push(color2);
+            console.log(colors);
+            var color3 = prompt("Enter any color ");
+            colors.unshift(color3);
+            console.log(colors);
+            var color4 = prompt("Enter any color ");
+            colors.unshift(color4);
+            console.log(colors);
+
+            colors.shift();
+            console.log(colors);
+            colors.pop();
+            console.log(colors);
+
+            var colorIndex = prompt("Enter any Index ");
+            var color5 = prompt("Enter any Color ");
+
+            colors.splice(colorIndex, 0,color5);
+
+            console.log(colors);
+            console.log(colors.length);  
+            
+            var colorIndexDelete = prompt("Enter any Index to delete ");
+            var countColorDelete = prompt("Enter any Number ");
+
+            colors.splice(colorIndexDelete,  countColorDelete);
+
+            console.log(colors);
+            console.log(colors.length);  
+            
+        </script>   
+    
+    </body>
+
+    
+
+
+</html>

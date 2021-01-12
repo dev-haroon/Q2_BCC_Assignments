@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    
+</head>
+    <body>
+        <h2> Qualification </h2>
+
+        <p id="degrees">Demo</p>
+        <script language="javascript">
+            var degrees, text, dLen, i;
+            degrees = new Array(8); 
+            degrees = new Array("SSC", "HSC", "BCS","BS", "BCOM", "MS","M. Phil", "PhD");
+            
+            dLen = degrees.length;
+            alert(dLen);    
+            text = "<ol>";
+            for (i = 0; i < dLen; i++) {
+                text += "<li>" + degrees[i] + "</li>";
+            }
+            text += "</ol>";
+            
+            document.getElementById("degrees").innerHTML = text;
+        </script>   
+    
+    </body>
+
+    
+
+
+</html>
