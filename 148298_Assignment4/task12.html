@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> </title>
+<script>
+    function getDay(){        
+
+        var date = new Date();
+        var day = date.getDate();        
+        var msg = null;
+        if(day<16)
+        {
+            msg = "First fifteen days of the month";
+                       
+        }
+        else
+        {
+            msg = "Last days of the month"; 
+        }
+        console.log(msg);
+    }
+</script>
+</head>
+<body onload="getDay()">    
+    
+    
+</body>
+</html>

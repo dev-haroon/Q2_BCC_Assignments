@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Replace Character in a String</title>
+<script>
+    function strRound(){
+        
+        var str = document.getElementById("txtStr").value;
+         var str_round = "Number: "+str;
+         var round_off_val = Math.round(str);
+         var floor_val = Math.floor(str);
+         var ceil_val = Math.ceil(str);
+         str_round+="<br> Round Off Value: "+round_off_val;
+         str_round+="<br> Floor Value: "+floor_val;
+         str_round+="<br> Ceil Value: "+ceil_val;
+         dvRoundValues.innerHTML = str_round;
+         //alert(Math.round(str));
+        
+        
+    }
+</script>
+</head>
+<body>
+    <div id="dvRoundValues"> </div>
+    <input type="text" id="txtStr">
+    <button type="button" onclick="strRound();">Round String</button>
+</body>
+</html>

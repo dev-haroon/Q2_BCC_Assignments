@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> </title>
+<script>
+    function removeTags(){
+        var inputStr = "<p><strong><em>Only Print this</em></strong></p>";
+        inputStr = inputStr.replace(/<[^>]*>/gi,'');
+        console.log(inputStr);
+        
+    }
+</script>
+</head>
+<body onload="removeTags()">
+    
+    <p><strong><em>Only Print this</em></strong></p>
+    
+</body>
+</html>

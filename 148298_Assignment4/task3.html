@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Replace Character in a String</title>
+<script>
+    function strReplace(){
+        
+        var str = document.getElementById("pwd").value;
+        
+        alert(pwd.value);
+        if ((str.match(/[a-z]/g) || str.match( 
+                    /[A-Z]/g) || str.match( 
+                    /[0-9]/g)) && str.length >= 8 && str.match(/^[^0-9].*$/))      
+                    {
+                        alert("true");
+                    }
+                    else{
+                        alert("false");
+                    }
+        
+    }
+</script>
+</head>
+<body>
+    <input type="password" id="pwd">
+    <button type="button" onclick="strReplace();">Replace</button>
+</body>
+</html>
