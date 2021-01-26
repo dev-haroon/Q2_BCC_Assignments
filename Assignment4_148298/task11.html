@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> </title>
+<script>
+    function sumNumber(){        
+
+        //let num = 1246;
+        let num = document.getElementById("txtNumber").value;
+        let arr = Array.from(String(num), Number);
+        var sum = 0;
+        for (var i=0;i<arr.length;i++)
+        {
+           sum = sum+arr[i];
+        }
+        console.log(sum);
+    }
+</script>
+</head>
+<body>    
+    <input type="text" id="txtNumber">
+    <button type="button" onclick="sumNumber();">Replace</button> 
+    
+</body>
+</html>

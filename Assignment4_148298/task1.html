@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Replace Character in a String</title>
+<script>
+    function strReplace(){
+        
+        var text = "Hyderabad";
+        for (var i = 0; i < text.length; i++) {
+            if (text.slice(i, i + 5) === "Hyder") {
+                text = text.slice(0, i) + "Islam" + text.slice(i + 5);
+            }
+        }
+        
+        document.getElementById("myText").innerHTML = text;
+        //alert(text);
+    }
+</script>
+</head>
+<body>
+    <p id="myText">Hyderabad </p>
+    <button type="button" onclick="strReplace();">Replace</button>
+</body>
+</html>

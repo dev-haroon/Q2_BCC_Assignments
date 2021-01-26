@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> </title>
+<script>
+    function getElapsedSecs(){        
+
+        var date = new Date();
+        console.log("Current Date: "+date);
+        var dateMilliSec= date.getTime();
+        console.log("Elapsed milliseconds since January 1, 1970: "+dateMilliSec);
+
+        var minutes = 1000 * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var d = new Date();
+        var t= d.getTime();
+
+        var y = Math.round(t / minutes);
+        console.log("Elapsed minutes since January 1, 1970: "+y);
+    }
+</script>
+</head>
+<body onload="getElapsedSecs()">    
+    
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> </title>
+<script>
+    function getBirthYear(){       
+
+        var age = document.getElementById("txtAge").value;
+        
+        var curr_dt = Date.now();
+        var curr_ms = new Date(curr_dt); 
+        var currYear= curr_ms.getFullYear();
+        var birthYear = currYear - age ;
+        //console.log(birthYear);
+        var showMsg = "Your age is: "+age;
+        showMsg+= "<br> Your birth year is: "+birthYear;
+        document.getElementById("pArea").innerHTML = showMsg;
+    //var year = age_dt.getUTCFullYear();  
+    }
+</script>
+</head>
+<body >    
+    <p id="pArea"> </p>
+
+    <input type="text" id="txtAge">
+    <button type="button" onclick="getBirthYear();">Birth Year</button>
+    
+</body>
+</html>
